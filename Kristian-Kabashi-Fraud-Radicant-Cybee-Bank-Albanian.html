@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Kabashi Under Investigation After Alleged Cybee.ai Investor Fraud — Tech.eu</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=Caveat:wght@600;700&family=Bebas+Neue&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#111;--soft:#555;--rule:#e0e0e0;--accent:#d63031;--bg:#fafaf8;--gold:#c8973a}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);font-size:17px;line-height:1.7}
+
+/* NAV */
+nav{border-bottom:1px solid var(--rule);background:#fff;position:sticky;top:0;z-index:100}
+.nav-inner{max-width:1120px;margin:0 auto;padding:0 24px;height:52px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'DM Serif Display',serif;font-size:22px;letter-spacing:-.5px}
+.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:20px;font-size:13px;color:var(--soft);font-weight:500}
+.nav-links a{text-decoration:none;color:inherit}
+.nav-links a:hover{color:var(--ink)}
+.nav-tag{font-size:11px;background:var(--accent);color:#fff;padding:3px 8px;border-radius:2px;font-weight:600;letter-spacing:.5px}
+
+/* BREAKING TICKER */
+.ticker-wrap{background:#1a1a1a;color:#fff;padding:7px 0;overflow:hidden;white-space:nowrap}
+.ticker-inner{display:inline-block;animation:ticker 28s linear infinite}
+@keyframes ticker{from{transform:translateX(100vw)}to{transform:translateX(-100%)}}
+.ticker-inner span{font-size:12px;letter-spacing:1px;margin-right:60px}
+.ticker-inner span b{color:#ff6b6b}
+
+/* ARTICLE */
+.hero-wrap{max-width:720px;margin:44px auto 0;padding:0 24px}
+.category-label{font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:600;color:var(--accent);margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.live-dot{width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block;animation:blink 1s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+.article-title{font-family:'DM Serif Display',serif;font-size:46px;line-height:1.1;color:var(--ink);margin-bottom:20px}
+.article-subtitle{font-size:18px;color:var(--soft);line-height:1.6;border-left:3px solid var(--accent);padding-left:16px;margin-bottom:24px;font-style:italic}
+.byline{display:flex;align-items:center;gap:12px;padding:14px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-bottom:32px}
+.byline-avatar{width:36px;height:36px;border-radius:50%;background:#888;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:#fff}
+.byline-text{font-size:13px;color:var(--soft)}
+.byline-text strong{color:var(--ink);font-weight:600}
+.share-row{display:flex;gap:8px;margin-left:auto}
+.share-btn{font-size:12px;padding:5px 12px;border:1px solid var(--rule);border-radius:2px;background:#fff;cursor:pointer;color:var(--soft);font-family:'DM Sans',sans-serif}
+
+/* HERO IMG */
+.hero-img-wrap{max-width:720px;margin:0 auto 36px;padding:0 24px}
+.hero-img-wrap img{width:100%;max-height:420px;object-fit:cover;object-position:center 15%;display:block}
+.img-caption{font-size:12px;color:#999;margin-top:6px;font-style:italic}
+
+/* BODY */
+.body-wrap{max-width:680px;margin:0 auto;padding:0 24px 80px}
+.body-wrap p{margin-bottom:22px;font-size:17px;line-height:1.8;color:#1a1a1a}
+.body-wrap p strong{color:var(--ink)}
+.pull-quote{font-family:'DM Serif Display',serif;font-size:25px;line-height:1.4;color:var(--ink);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);padding:20px 0;margin:36px 0;font-style:italic}
+.section-head{font-family:'DM Serif Display',serif;font-size:27px;margin:40px 0 14px;color:var(--ink)}
+.alert-box{background:#fff5f5;border:1px solid #ffcccc;border-left:4px solid var(--accent);padding:18px 22px;margin:28px 0;font-size:15px;color:#333;line-height:1.7}
+.alert-box strong{display:block;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+.fact-box{background:#f0f0ec;border-left:4px solid var(--gold);padding:18px 22px;margin:28px 0;font-size:15px;color:#333;line-height:1.7}
+.fact-box strong{display:block;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.read-more-btn{display:block;width:100%;padding:15px;background:var(--ink);color:#fff;text-align:center;font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;cursor:pointer;border:none;font-family:'DM Sans',sans-serif;margin:32px 0;transition:background .2s}
+.read-more-btn:hover{background:#333}
+
+/* RELATED */
+.related{max-width:720px;margin:0 auto;padding:0 24px 60px;border-top:2px solid var(--ink)}
+.related h3{font-family:'DM Serif Display',serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;margin:20px 0 16px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
+.related-item{font-size:13px;color:var(--soft);line-height:1.5;cursor:pointer}
+.related-item strong{display:block;color:var(--ink);font-size:14px;margin-bottom:4px}
+
+/* ══ REVEAL OVERLAY ══ */
+#reveal{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .35s}
+#reveal.on{opacity:1;pointer-events:all}
+#confetti{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.r-backdrop{position:absolute;inset:0;background:rgba(5,15,30,.92);backdrop-filter:blur(6px)}
+
+.r-card{
+  position:relative;
+  background:linear-gradient(145deg,#0b1f3a 0%,#122b50 60%,#0d2444 100%);
+  border:2px solid #c8a96e;
+  border-radius:4px;
+  max-width:680px;width:92%;
+  padding:52px 48px 44px;
+  text-align:center;
+  box-shadow:0 30px 80px rgba(0,0,0,.6),inset 0 0 60px rgba(200,169,110,.04);
+  transform:scale(.7) translateY(40px);
+  transition:transform .55s cubic-bezier(.175,.885,.32,1.275);
+}
+#reveal.on .r-card{transform:scale(1) translateY(0)}
+
+.gotcha-line{font-family:'Bebas Neue',sans-serif;font-size:90px;color:#c8a96e;letter-spacing:4px;line-height:1;text-shadow:0 4px 30px rgba(200,169,110,.5);margin-bottom:6px;animation:bounceIn .6s .3s both cubic-bezier(.175,.885,.32,1.275)}
+@keyframes bounceIn{from{transform:scale(.3);opacity:0}to{transform:scale(1);opacity:1}}
+
+.gotcha-emoji{font-size:52px;display:block;margin-bottom:10px;animation:spinIn .5s .5s both ease-out}
+@keyframes spinIn{from{transform:rotate(-180deg) scale(0);opacity:0}to{transform:rotate(0deg) scale(1);opacity:1}}
+
+.hbd-line{font-family:'DM Serif Display',serif;font-size:28px;font-weight:900;color:#fff;margin-bottom:8px;letter-spacing:1px}
+.hbd-name{font-family:'Caveat',cursive;font-size:54px;color:#c8a96e;line-height:1.1;margin-bottom:20px;text-shadow:0 2px 20px rgba(200,169,110,.4)}
+
+.divider{width:80px;height:2px;background:linear-gradient(to right,transparent,#c8a96e,transparent);margin:0 auto 22px}
+
+.funny-text{font-family:'DM Sans',sans-serif;font-size:16px;color:#b0c4de;line-height:1.7;margin-bottom:28px;font-style:italic}
+.funny-text strong{color:#c8a96e;font-style:normal}
+
+.signed-by{background:rgba(200,169,110,.1);border:1px solid rgba(200,169,110,.3);border-radius:2px;padding:14px 20px;margin-bottom:28px}
+.signed-by p{font-family:'Caveat',cursive;font-size:22px;color:#c8a96e;line-height:1.6}
+.signed-by .label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#7a9cbf;font-family:'DM Sans',sans-serif;margin-bottom:6px;font-style:normal}
+
+.cake-row{font-size:36px;letter-spacing:8px;margin-bottom:28px;animation:float 3s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
+.close-btn{background:transparent;border:1px solid rgba(200,169,110,.5);color:#c8a96e;padding:10px 28px;font-size:12px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s;border-radius:2px}
+.close-btn:hover{background:rgba(200,169,110,.15);border-color:#c8a96e}
+
+@media(max-width:640px){
+  .article-title{font-size:30px}
+  .nav-links{display:none}
+  .related-grid{grid-template-columns:1fr}
+  .gotcha{font-size:36px}
+  .name{font-size:36px}
+  .r-top{padding:24px 20px 20px}
+  .r-body{padding:22px 20px 26px}
+  .warrant{padding:18px 20px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="logo">tech<span>.</span>eu</div>
+    <div class="nav-links"><a href="#">Startups</a><a href="#">Funding</a><a href="#">People</a><a href="#">Legal</a><a href="#">Events</a></div>
+    <span class="nav-tag">BREAKING</span>
+  </div>
+</nav>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-inner">
+    <span><b>BREAKING:</b> Kabashi questioned by Swiss FINMA over alleged Cybee.ai investor fraud &nbsp;·&nbsp;</span>
+    <span>Cybee.ai co-founder denies wrongdoing, calls allegations "completely fabricated" &nbsp;·&nbsp;</span>
+    <span>Swiss prosecutors confirm inquiry is "at an early but serious stage" &nbsp;·&nbsp;</span>
+    <span>Radicant shares fall 2.8% amid executive controversy &nbsp;·&nbsp;</span>
+    <span>Legal team expected to issue statement by end of day &nbsp;·&nbsp;</span>
+  </div>
+</div>
+
+<!-- ARTICLE HERO -->
+<div class="hero-wrap">
+  <div class="category-label"><span class="live-dot"></span> Breaking &nbsp;·&nbsp; Legal &amp; Fraud</div>
+  <h1 class="article-title">Cybee.ai Co-Founder Kristian Kabashi Accused of Defrauding Potential Investor in €4.5M Pitch Scheme</h1>
+  <p class="article-subtitle">After years navigating Switzerland's fintech landscape, the Zürich-based entrepreneur is under scrutiny from federal authorities following allegations that he misled and financially deceived a prospective investor during a Cybee.ai funding round.</p>
+  <div class="byline">
+    <div class="byline-avatar">LW</div>
+    <div class="byline-text"><strong>Lena Weidmann</strong> &nbsp;·&nbsp; Senior Investigative Correspondent<br/>May 6, 2026 &nbsp;·&nbsp; Updated 11:42 CET &nbsp;·&nbsp; 6 min read</div>
+    <div class="share-row"><button class="share-btn">Share</button><button class="share-btn">Save</button></div>
+  </div>
+</div>
+
+<!-- HERO IMAGE -->
+<div class="hero-img-wrap">
+  <img src="data:image/jpeg;base64,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" alt="Kristian Kabashi"/>
+  <p class="img-caption">Kristian Kabashi, co-founder of Cybee.ai and COO of Radicant, photographed in Zürich earlier this year. Swiss authorities have opened a preliminary inquiry following a formal complaint lodged by a prospective investor. (File photo)</p>
+</div>
+
+<!-- BODY -->
+<div class="body-wrap">
+
+  <div class="alert-box">
+    <strong>⚠ Editor's Note — Updated 11:42 CET</strong>
+    Swiss Federal Financial Market Supervisory Authority (FINMA) has confirmed receipt of a formal complaint. A spokesperson stated the inquiry is "active and ongoing." Kristian Kabashi has not been charged. His legal representatives declined to comment on the record.
+  </div>
+
+  <p><strong>ZÜRICH</strong> — Kristian Kabashi, the Albanian-German entrepreneur known for co-founding fintech platform Numarics and AI-native cybersecurity startup <strong>Cybee.ai</strong>, is at the centre of an emerging fraud inquiry after a prospective investor filed a formal complaint with Swiss federal authorities alleging he was deceived and financially manipulated during a Cybee.ai investment pitch.</p>
+
+  <p>According to documents reviewed by tech.eu and two sources familiar with the matter, the complainant — a Zürich-based private equity principal who asked not to be identified — claims that Kabashi presented <strong>materially false revenue projections, fabricated partnership agreements, and a doctored cap table</strong> during a series of meetings in late 2025, with the aim of extracting a €4.5M commitment under false pretences.</p>
+
+  <p>"He walked in with decks that looked polished, numbers that looked real, and a story that sounded exactly like what you'd want to hear," the source told tech.eu. "It was only after our due diligence team started pulling threads that the whole thing began to unravel."</p>
+
+  <div class="pull-quote">"He had answers for everything. Too many answers, actually. That should have been the first sign."<br/><small style="font-size:14px;color:#888;font-style:normal">— Anonymous investor source, Zürich</small></div>
+
+  <h2 class="section-head">A Pattern Allegedly Spanning Multiple Rounds</h2>
+
+  <p>The complaint is not the first time questions have been raised in private about Kabashi's fundraising tactics, according to two separate sources within Switzerland's venture community who spoke on condition of anonymity. One described informal warnings circulated among investors after the <strong>Numarics CHF 10M Series A</strong> closed in 2023, though no formal complaint was ever lodged at that stage.</p>
+
+  <p>Cybee.ai, the AI-native human-risk and cybersecurity platform Kabashi co-founded with Hekuran Doli, was inducted into the <strong>Best of Swiss Apps Hall of Fame</strong> in 2025. Kabashi has frequently cited the award in media appearances and investor materials. Sources allege the award's prestige was used to lend credibility to what they describe as a misleading pitch narrative.</p>
+
+  <div class="fact-box">
+    <strong>Background</strong>
+    Kristian Kabashi: Co-Founder, Cybee.ai · COO, Radicant Holding · Former Co-Founder &amp; CXO, Numarics (CHF 10M Series A, 2023) · Founder, The Blank Collar agency · TEDxPrishtina speaker, 2024 · Swissalbs Entrepreneur of the Year, 2023 · Forbes Business Council member
+  </div>
+
+  <h2 class="section-head">Radicant Holding Issues Brief Statement</h2>
+
+  <p>Radicant Holding, where Kabashi serves as Chief Operating Officer following the merger with Numarics in October 2024, issued a brief statement Wednesday morning confirming it is "aware of the reports" and that "the matter is being reviewed internally." The bank declined to comment further on whether Kabashi remains in his operational role pending the outcome of any inquiry.</p>
+
+  <p>Legal experts contacted by tech.eu cautioned that FINMA inquiries of this nature frequently conclude without charges, and that the threshold for a formal criminal referral is high. "Opening an inquiry is not an indictment," said one Zürich-based securities attorney. "But it is not nothing, either."</p>
+
+  <p>Kabashi's personal website — which describes him as a "creative, builder, transformer" operating by the philosophy <em>"Work is for bots, life is for humans"</em> — had not been updated as of publication. His AI-powered virtual agent, prominently featured on the site, continued to respond to queries with characteristic confidence.</p>
+
+  <button class="read-more-btn" onclick="triggerReveal()">Continue reading — Full FINMA document ↓</button>
+
+  <h2 class="section-head">What Happens Next</h2>
+  <p>Swiss federal prosecutors have 30 days to determine whether to escalate the matter or close the file. In the meantime, the fintech community — which has long regarded Kabashi as one of its more colourful and energetic operators — is watching closely. Several investors contacted by tech.eu said they had scheduled calls with legal counsel after reading the initial reports.</p>
+
+  <p>Kabashi himself has not posted on social media since the reports surfaced. His last Instagram story, posted 14 hours ago, was a motivational quote about resilience. The irony was not lost on his followers.</p>
+
+</div>
+
+<div class="related">
+  <h3>Related coverage</h3>
+  <div class="related-grid">
+    <div class="related-item"><strong>Cybee.ai: What Investors Actually Saw in the Pitch Deck</strong>A deep dive into the funding materials now under scrutiny · Today</div>
+    <div class="related-item"><strong>Swiss Startup Fraud: How Common Is It Really?</strong>FINMA data and expert analysis · 3 days ago</div>
+    <div class="related-item"><strong>Radicant's Kabashi Problem</strong>How a COO scandal could derail a promising banking merger · Today</div>
+  </div>
+</div>
+
+
+<!-- ══ BIRTHDAY REVEAL ══ -->
+<div id="reveal">
+  <canvas id="confetti"></canvas>
+  <div class="r-backdrop"></div>
+  <div class="r-card">
+
+    <div class="gotcha-line">HAAA — GOT YOU!</div>
+    <span class="gotcha-emoji">😂🎉</span>
+
+    <div class="hbd-line">Happy Birthday,</div>
+    <div class="hbd-name">Kristian!</div>
+
+    <div class="divider"></div>
+
+    <p class="funny-text">
+      No investors were harmed in the making of this prank. 💼<br/>
+      You've built empires, survived mergers, written a book and gave a TEDx talk —<br/>
+      but you still clicked a random link someone sent you. 🖱️<br/>
+      The bots would have known better. <strong>Just saying.</strong> 🤖<br/><br/>
+      The good news? You're not going to prison.<br/>
+      The bad news? <strong>You're getting older.</strong> 🎂
+    </p>
+
+    <div class="cake-row">🎂 🎈 🥂 🎊 🎁</div>
+
+    <div class="signed-by">
+      <p class="label">With love from your team</p>
+      <p>Donjeta &nbsp;·&nbsp; Sara &nbsp;·&nbsp; Endrit &nbsp;·&nbsp; Erion &nbsp;·&nbsp; Fjolla</p>
+    </div>
+
+    <button class="close-btn" onclick="document.getElementById('reveal').classList.remove('on')">← Back to the fake article 😂</button>
+
+  </div>
+</div>
+
+
+<script>
+let triggered=false;
+const autoTimer=setTimeout(()=>triggerReveal(),90000);
+function triggerReveal(){
+  if(triggered)return;
+  triggered=true;
+  clearTimeout(autoTimer);
+  document.getElementById('reveal').classList.add('on');
+  startConfetti();
+}
+function startConfetti(){
+  const canvas=document.getElementById('confetti');
+  const ctx=canvas.getContext('2d');
+  canvas.width=window.innerWidth;canvas.height=window.innerHeight;
+  const colors=['#d63031','#c8973a','#111','#00b894','#0984e3','#fdcb6e','#e17055','#a29bfe'];
+  const pieces=Array.from({length:200},()=>({
+    x:Math.random()*canvas.width,
+    y:Math.random()*canvas.height-canvas.height,
+    w:Math.random()*13+5,h:Math.random()*7+3,
+    color:colors[Math.floor(Math.random()*colors.length)],
+    speed:Math.random()*4+1.5,
+    angle:Math.random()*360,
+    spin:(Math.random()-.5)*8
+  }));
+  let raf;
+  function draw(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    pieces.forEach(p=>{
+      ctx.save();
+      ctx.translate(p.x+p.w/2,p.y+p.h/2);
+      ctx.rotate(p.angle*Math.PI/180);
+      ctx.fillStyle=p.color;
+      ctx.fillRect(-p.w/2,-p.h/2,p.w,p.h);
+      ctx.restore();
+      p.y+=p.speed;p.angle+=p.spin;
+      if(p.y>canvas.height){p.y=-p.h;p.x=Math.random()*canvas.width;}
+    });
+    raf=requestAnimationFrame(draw);
+  }
+  draw();
+  setTimeout(()=>cancelAnimationFrame(raf),10000);
+}
+window.addEventListener('resize',()=>{
+  const c=document.getElementById('confetti');
+  c.width=window.innerWidth;c.height=window.innerHeight;
+});
+</script>
+</body>
+</html>
